@@ -45,7 +45,6 @@
           margin-left: auto;
           margin-right: auto;
           text-align: center;
-          font-size: 80px;
           word-wrap: break-word;
           font-weight: bolder;
           display: block;
@@ -69,6 +68,18 @@
     </div>
   </body>
   <style>
+    /* add media query for mobile */
+    @media only screen and (max-width: 600px) {
+      #billaName {
+        font-size: 50px;
+      }
+    }
+    /* add media query for not mobile */
+    @media only screen and (min-width: 600px) {
+      #billaName {
+        font-size: 80px;
+      }
+    }
     .button-31 {
       background-color: #222;
       border-radius: 4px;
