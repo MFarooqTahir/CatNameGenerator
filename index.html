@@ -71,52 +71,6 @@
       </button>
     </div>
   </body>
-  <style>
-    /* add media query for mobile */
-    @media only screen and (max-width: 600px) {
-      #billaName {
-        font-size: 50px;
-      }
-    }
-    /* add media query for not mobile */
-    @media only screen and (min-width: 600px) {
-      #billaName {
-        font-size: 80px;
-      }
-    }
-    .button-31 {
-      background-color: #222;
-      border-radius: 4px;
-      border-style: none;
-      box-sizing: border-box;
-      color: #fff;
-      cursor: pointer;
-      display: block;
-      font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
-      font-size: 16px;
-      font-weight: 700;
-      margin-top: auto;
-      line-height: 1.5;
-      margin-left: auto;
-      margin-right: auto;
-      min-height: 44px;
-      min-width: 10px;
-      outline: none;
-      overflow: hidden;
-      position: relative;
-      text-align: center;
-      text-transform: none;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-      width: 30%;
-    }
-
-    .button-31:hover,
-    .button-31:focus {
-      opacity: 0.75;
-    }
-  </style>
   <script>
     const nameDiv = document.getElementById("billaName");
     const generateButton = document.getElementById("generateButton");
@@ -184,4 +138,50 @@
       nameDiv.innerHTML = randomName;
     }
   </script>
+  <style>
+    /* add media query for mobile */
+    @media only screen and (max-width: 600px) {
+      #billaName {
+        font-size: 50px;
+      }
+    }
+    /* add media query for not mobile */
+    @media only screen and (min-width: 600px) {
+      #billaName {
+        font-size: 80px;
+      }
+    }
+    .button-31 {
+      background-color: #222;
+      border-radius: 4px;
+      border-style: none;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      display: block;
+      font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: auto;
+      line-height: 1.5;
+      margin-left: auto;
+      margin-right: auto;
+      min-height: 44px;
+      min-width: 10px;
+      outline: none;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      text-transform: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: 30%;
+    }
+
+    .button-31:hover,
+    .button-31:focus {
+      opacity: 0.75;
+    }
+  </style>
 </html>
