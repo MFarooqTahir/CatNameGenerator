@@ -62,7 +62,7 @@
           -webkit-text-fill-color: transparent;
         "
       ></div>
-      <button class="button-31" onclick="GenerateName()" role="button">
+      <button class="button-31" onclick="GenerateName()" id="generateButton" role="button">
         Generate
       </button>
     </div>
@@ -115,6 +115,7 @@
   </style>
   <script>
     const nameDiv = document.getElementById("billaName");
+    const generateButton = document.getElementById("generateButton");
     const names = [
       "Chiku",
       "Bashir",
@@ -170,6 +171,7 @@
       "Abba biryani center",
     ];
     function GenerateName() {
+      generateButton.innerHTML="Generate again";
       let randomName = names[Math.floor(Math.random() * names.length)];
       while (randomName == nameDiv.innerHTML) {
         randomName = names[Math.floor(Math.random() * names.length)];
