@@ -1,2 +1,2 @@
 ﻿# Cat Name Generator
-#Now live at: <a href="https://mfarooqtahir.github.io/CatNameGenerator/"/>
+# Now live at: [Cat Name Generator](https://mfarooqtahir.github.io/CatNameGenerator/)
