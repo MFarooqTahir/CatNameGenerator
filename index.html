@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random cat name generator</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body style="background-color: #29303a; font-family: 'Open Sans', sans-serif">
-    <div
-      style="
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random cat name generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+</head>
+
+<body style="background-color: #29303a; font-family: 'Open Sans', sans-serif">
+  <div>hello</div>
+  <div style="
         padding: 15px;
         width: 80%;
         height: 30%;
@@ -25,28 +24,23 @@
         align-items: center;
         align-content: center;
         background-color: gray;
-      "
-    >
-      <h1
-        style="
+      ">
+    <h1 style="
           text-align: center;
           text-overflow: wrap;
           text-decoration: underline;
           word-wrap: break-word;
-        "
-      >
-        Random billa name generator
-      </h1>
-      <div style="
+        ">
+      Random billa name generator
+    </h1>
+    <div style="
       margin-top: 15px;
       margin-bottom: 15px;
        display: flex;
     flex-direction: row;
     align-items: flex-start">
       <div style="margin-right:auto;"></div>
-      <div
-        id="billaName"
-        style="
+      <div id="billaName" style="
           text-align: center;
           font-weight: bolder;
           display: block;
@@ -62,129 +56,131 @@
           background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
-        "
-      ></div>
+        "></div>
       <div style="margin-left:auto;"></div>
     </div>
-      <button class="button-31" onclick="GenerateName()" id="generateButton" role="button">
-        Generate
-      </button>
-    </div>
-  </body>
-  <script>
-    const nameDiv = document.getElementById("billaName");
-    const generateButton = document.getElementById("generateButton");
-    const names = [
-      "Shakira Shakira",
-      "Khursheed",
-      "Kallu pehelwan",
-      "Chiku",
-      "Bashir",
-      "Munna",
-      "Chacha",
-      "Dramaybaaz aurat",
-      "Billa",
-      "hehe xD",
-      "Champu",
-      "Kaku",
-      "Munnu",
-      "Pappu papay wala",
-      "Chotu",
-      "Bhai",
-      "Bhaijaan",
-      "My man :D",
-      "Chukandar",
-      "Poo poo",
-      "Kallu kasai",
-      "Billay ka bacha",
-      "Gajar ka halwa",
-      "Doremon",
-      "Chooha",
-      "Kala jadugar",
-      "Babu bhai",
-      "Timatar",
-      "Anday wala burger",
-      "Alfredo",
-      "Bhalu",
-      "Babloo",
-      "Bingo",
-      "Quddusi sahab ki bewah",
-      "Fridge",
-      "Pankha",
-      "Ac",
-      "Table",
-      "Chair",
-      "Motor cycle",
-      "Honda cg 125",
-      "Toyota Corolla",
-      "Honda Civic",
-      "Suzuki Mehran",
-      "Pyramid of gyza",
-      "Eiffel tower",
-      "Burj khalifa",
-      "Taj mahal",
-      "Statue of liberty",
-      "Big ben",
-      "Leaning tower of pisa",
-      "Kaka fruit chaat",
-      "Mcdonal",
-      "Al naaz biryani center",
-      "Abba biryani center",
-      "Port Qasim"
-    ];
-    function GenerateName() {
-      generateButton.innerHTML="Generate again";
-      let randomName = names[Math.floor(Math.random() * names.length)];
-      while (randomName == nameDiv.innerHTML) {
-        randomName = names[Math.floor(Math.random() * names.length)];
-      }
-      nameDiv.innerHTML = randomName;
+    <button class="button-31" onclick="GenerateName()" id="generateButton" role="button">
+      Generate
+    </button>
+  </div>
+</body>
+<script>
+  const nameDiv = document.getElementById("billaName");
+  const generateButton = document.getElementById("generateButton");
+  const names = [
+    "Shakira Shakira",
+    "Khursheed",
+    "Kallu pehelwan",
+    "Chiku",
+    "Bashir",
+    "Munna",
+    "Chacha",
+    "Dramaybaaz aurat",
+    "Billa",
+    "hehe xD",
+    "Champu",
+    "Kaku",
+    "Munnu",
+    "Pappu papay wala",
+    "Chotu",
+    "Bhai",
+    "Bhaijaan",
+    "My man :D",
+    "Chukandar",
+    "Poo poo",
+    "Kallu kasai",
+    "Billay ka bacha",
+    "Gajar ka halwa",
+    "Doremon",
+    "Chooha",
+    "Kala jadugar",
+    "Babu bhai",
+    "Timatar",
+    "Anday wala burger",
+    "Alfredo",
+    "Bhalu",
+    "Babloo",
+    "Bingo",
+    "Quddusi sahab ki bewah",
+    "Fridge",
+    "Pankha",
+    "Ac",
+    "Table",
+    "Chair",
+    "Motor cycle",
+    "Honda cg 125",
+    "Toyota Corolla",
+    "Honda Civic",
+    "Suzuki Mehran",
+    "Pyramid of gyza",
+    "Eiffel tower",
+    "Burj khalifa",
+    "Taj mahal",
+    "Statue of liberty",
+    "Big ben",
+    "Leaning tower of pisa",
+    "Kaka fruit chaat",
+    "Mcdonal",
+    "Al naaz biryani center",
+    "Abba biryani center",
+    "Port Qasim"
+  ];
+  function GenerateName() {
+    generateButton.innerHTML = "Generate again";
+    let randomName = names[Math.floor(Math.random() * names.length)];
+    while (randomName == nameDiv.innerHTML) {
+      randomName = names[Math.floor(Math.random() * names.length)];
     }
-  </script>
-  <style>
-    /* add media query for mobile */
-    @media only screen and (max-width: 600px) {
-      #billaName {
-        font-size: 50px;
-      }
+    nameDiv.innerHTML = randomName;
+  }
+</script>
+<style>
+  /* add media query for mobile */
+  @media only screen and (max-width: 600px) {
+    #billaName {
+      font-size: 50px;
     }
-    /* add media query for not mobile */
-    @media only screen and (min-width: 600px) {
-      #billaName {
-        font-size: 80px;
-      }
-    }
-    .button-31 {
-      background-color: #222;
-      border-radius: 4px;
-      border-style: none;
-      box-sizing: border-box;
-      color: #fff;
-      cursor: pointer;
-      display: block;
-      font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
-      font-size: 16px;
-      font-weight: 700;
-      margin-top: auto;
-      line-height: 1.5;
-      margin-left: auto;
-      margin-right: auto;
-      min-height: 44px;
-      min-width: 10px;
-      outline: none;
-      overflow: hidden;
-      position: relative;
-      text-align: center;
-      text-transform: none;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-      width: 30%;
-    }
+  }
 
-    .button-31:hover,
-    .button-31:focus {
-      opacity: 0.75;
+  /* add media query for not mobile */
+  @media only screen and (min-width: 600px) {
+    #billaName {
+      font-size: 80px;
     }
-  </style>
+  }
+
+  .button-31 {
+    background-color: #222;
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: auto;
+    line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 44px;
+    min-width: 10px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 30%;
+  }
+
+  .button-31:hover,
+  .button-31:focus {
+    opacity: 0.75;
+  }
+</style>
+
 </html>
